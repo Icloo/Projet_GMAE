@@ -10,19 +10,20 @@
     <title>Page inscription</title>
 </head>
 
-<body class="bodyLoginInscription">
+<body class="bodyModification">
     <?php require('template/header.php'); ?>
 
-    <section class="secInscriription">
-        <!-- <h2>Inscription</h2> -->
-        <form class="form formInscription">
+    <section class="secModifier">
+        <form class="form formModification">
             <input type="text" class="input" placeholder="Nom" name="name" required>
             <input type="text" class="input" placeholder="Prénom" name="lastname" required>
             <input type="text" class="input" placeholder="Pseudo" name="username" required>
-            <input type="text" class="input" placeholder="Mot de passe" name="password" required>
+            <div class="divPassModifier">
+            <label for="#" class="text-Modifier">changer de mot de passe:</label>
+            <input type="password" class="input" placeholder="Mot de passe" name="password" required></div>
             <input type="text" class="input questionSecréte" placeholder=" Question secréte " name="QuesSecrete" value="">
             <input type="text" class="input reponseSecrete" placeholder="Réponse question secréte" name="ResSecrete" required>
-            <input type="submit" class="submit submitInscription" name="submitInscription" value="S'inscrire">
+            <input type="submit" class="submit submitModifier" name="submitModifier" value="Modifier">
         </form>
     </section>
     <?php

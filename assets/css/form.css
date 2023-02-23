@@ -1,12 +1,22 @@
+/* Login/Inscription */
 .bodyLoginInscription{
-    background: linear-gradient(180deg, #c42256 0%, #ffff99 100%);
+background: rgb(196,34,86);
+background: linear-gradient(0deg, rgba(196,34,86,1) 0%, rgba(255,255,255,1) 100%);
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
-/* formulaire login/inscription */
-.secLogin,.secInscriription{
+/* Dashboard */
+.bodyModification{
+    margin: 0;
+    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #F5F5F5;
+}
+/* Formulaire login/inscription/ modifier */
+.secLogin,.secInscriription,.secModifier{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,6 +40,12 @@
 .formInscription{
     padding: 2rem;
 }
+.formModification{
+    padding: 2rem;
+}
+.GMAE-Logo{
+    width: 250px;
+}
 .input{
     padding: 1rem ;
     width: 20vw;
@@ -38,6 +54,15 @@
 }
 .input:focus{
     outline: none;
+}
+.reponseSecrete{
+    height: 3rem;
+}
+
+.text-Modifier{
+    margin-right:10rem;
+    margin-bottom: 5px;
+    display: block;
 }
 .submit{
     margin-top: 2vh;
@@ -50,25 +75,16 @@
     color:#c42256;
 }
 .submit:hover{
-    box-shadow: 3px 3px 3px;
-    background-color: black;
+    background-color:rgb(196,34,86);
     color: white;
     transition: all 0.3s;
     border: 2px solid transparent;
 }
-.userLogo{
-    width: 250px;
-}
+
 .submitInscription{
     margin-top: 3vh;
 }
-.secreteQuestion{
-    margin-right: auto;
-    color: red;
-}
-.inputSecrete{
-    padding: 2rem 1rem;
-}
+
 /* footer */
 .copyright{
     margin-top:2.5rem;
@@ -77,14 +93,17 @@
     text-align: center;
     padding: 0.7rem;
     letter-spacing: 2px;
+  font-family: 'Libre Baskerville', serif;
+    
 }
+/* responsive */
 @media screen and (max-width:760px){
     .secLogin{
         padding-top: 8vh;
     }
     .form{
         gap: 15px;
-        padding: 2rem;
+        padding:2rem 0.5rem;
     }
     .userLogo{
         width: 150px;
@@ -99,4 +118,23 @@
     .copyright{
             padding: 0.4rem;
         }
+  
+
+        .formModification{
+            padding: 1rem;
+            width: fit-content;
+        }
+}
+@media screen and (max-width:500px){
+
+    .text-Modifier{
+        margin-left:20%;
+       width: max-content; 
+       margin-bottom: 5px;
+       display: block;
+   }
+   .formModification{
+    padding: 1rem;
+    width: 90%;
+}
 }
