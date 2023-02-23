@@ -13,7 +13,7 @@
   <section class="secLogin">
     <form action="" method="" class="form formLogin">
       <div>
-      <img src="assets/images/logo_GMAE-1.png" alt="" class="userLogo"></div>
+      <img src="assets/logo_GMAE-1.png" alt="" class="userLogo"></div>
       <input type="text" name="username" class="input inputUser" placeholder="Pseudo" required>
       <input type="text" name="password" class="input inputPass" placeholder="Mot de passe" required>
       <!-- <label for="">Nouvel utilisateur? <a href="inscription.php">S'inscrire</a></label> -->
