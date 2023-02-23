@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <footer>
+    <footer class="footer">
         <div class="copyright">
             <p> Copyright ©2023 GMAE</p>
         </div>

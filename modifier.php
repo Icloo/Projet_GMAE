@@ -29,7 +29,7 @@
         </form>
     </section>
     <?php
-
+    
     require("template/footer.php");
     ?>
 </body>
