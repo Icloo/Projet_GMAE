@@ -16,6 +16,9 @@
     <?php require('template/header.php'); ?>
 
         <!-- Page content-->
+        
+        <div class="separateur"></div>
+
         <h1>Présentation de l'entreprise</h1>
         <div class="speech_presentation">
 

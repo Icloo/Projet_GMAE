@@ -7,7 +7,8 @@
         <p> Bonjour UTILISATEUR </p>
     </div>
     <div>
-        <i class="bi bi-person-circle"> Dashboard</i>
+        <i class="bi bi-person-circle responsive_i1"> Dashboard</i>
+        <i class="bi bi-person-circle responsive_i2"></i>
         <i class="bi bi-power text-danger"></i>
     </div>
 
