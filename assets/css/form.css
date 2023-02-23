@@ -1,140 +1,145 @@
 /* Login/Inscription */
-.bodyLoginInscription{
-background: rgb(196,34,86);
-background: linear-gradient(0deg, rgba(196,34,86,1) 0%, rgba(255,255,255,1) 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-  font-family: 'Roboto', sans-serif;
+.bodyLoginInscription {
+  background: rgb(196, 34, 86);
+  background: linear-gradient(
+    0deg,
+    rgba(196, 34, 86, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 /* Dashboard */
-.bodyModification{
-    margin: 0;
-    padding: 0;
-  font-family: 'Roboto', sans-serif;
-  background: #F5F5F5;
+.bodyModification {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: #f5f5f5;
 }
 /* Formulaire login/inscription/ modifier */
-.secLogin,.secInscriription,.secModifier{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 7vh;
+.secLogin,
+.secInscriription,
+.secModifier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7vh;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    gap: 20px;
-    padding: 4rem;
-    padding-top: 1rem;
-    border-radius: 2rem ;
-    background: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(15.6px);
-    -webkit-backdrop-filter: blur(15.6px);
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 4rem;
+  padding-top: 1rem;
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15.6px);
+  -webkit-backdrop-filter: blur(15.6px);
 }
-.formInscription{
-    padding: 2rem;
+.formInscription {
+  padding: 2rem;
 }
-.formModification{
-    padding: 2rem;
+.formModification {
+  padding: 2rem;
 }
-.GMAE-Logo{
-    width: 250px;
+.adminAcces {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
-.input{
-    padding: 1rem ;
-    width: 20vw;
-    border-radius: 0.8rem;
-    border: 2px solid black;
+.GMAE-Logo {
+  width: 250px;
 }
-.input:focus{
-    outline: none;
+.input {
+  padding: 1rem;
+  width: 20vw;
+  border-radius: 0.8rem;
+  border: 2px solid black;
 }
-.reponseSecrete{
-    height: 3rem;
+.input:focus {
+  outline: none;
+}
+.reponseSecrete {
+  height: 3rem;
+}
+.divPassModifier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-Modifier {
+  margin-right: 10rem;
+  margin-bottom: 5px;
+}
+.submit {
+  margin-top: 2vh;
+  padding: 0.8rem 1.5rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: white;
+  border: 2px solid #c42256;
+  color: #c42256;
+}
+.submit:hover {
+  background-color: rgb(196, 34, 86);
+  color: white;
+  transition: all 0.3s;
+  border: 2px solid transparent;
 }
 
-.text-Modifier{
-    margin-right:10rem;
-    margin-bottom: 5px;
-    display: block;
-}
-.submit{
-    margin-top: 2vh;
-    padding: 0.8rem 1.5rem;
-    border-radius: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    background-color: white;
-    border: 2px solid #c42256;
-    color:#c42256;
-}
-.submit:hover{
-    background-color:rgb(196,34,86);
-    color: white;
-    transition: all 0.3s;
-    border: 2px solid transparent;
-}
-
-.submitInscription{
-    margin-top: 3vh;
+.submitInscription {
+  margin-top: 3vh;
 }
 
 /* footer */
-.copyright{
-    margin-top:2.5rem;
-    background-color:#3a3a3a;
-    color: white;
-    text-align: center;
-    padding: 0.7rem;
-    letter-spacing: 2px;
-  font-family: 'Libre Baskerville', serif;
-    
+.copyright {
+  margin-top: 2.5rem;
+  background-color: #3a3a3a;
+  color: white;
+  text-align: center;
+  padding: 0.7rem;
+  letter-spacing: 2px;
+  font-family: "Libre Baskerville", serif;
 }
+
 /* responsive */
-@media screen and (max-width:760px){
-    .secLogin{
-        padding-top: 8vh;
-    }
-    .form{
-        gap: 15px;
-        padding:2rem 0.5rem;
-    }
-    .userLogo{
-        width: 150px;
-    }
-    .input{
-        padding: 1rem ;
-        width: 57vw;
-    }
-    .submit{
-        margin-top:2vh;
-        }
-    .copyright{
-            padding: 0.4rem;
-        }
-  
-
-        .formModification{
-            padding: 1rem;
-            width: fit-content;
-        }
-}
-@media screen and (max-width:500px){
-
-    .text-Modifier{
-        margin-left:20%;
-       width: max-content; 
-       margin-bottom: 5px;
-       display: block;
-   }
-   .formModification{
+@media screen and (max-width: 760px) {
+  .secLogin {
+    padding-top: 8vh;
+  }
+  .form {
+    gap: 15px;
+    padding: 2rem 0.5rem;
+  }
+  .userLogo {
+    width: 150px;
+  }
+  .input {
     padding: 1rem;
-    width: 90%;
-}
+    width: 57vw;
+  }
+  .submit {
+    margin-top: 2vh;
+  }
+  .copyright {
+    padding: 0.4rem;
+  }
+  .formModification {
+    padding: 2rem;
+  }
+  .text-Modifier {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
 }

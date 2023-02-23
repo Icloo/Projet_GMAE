@@ -15,9 +15,11 @@
 
     <section class="secModifier">
         <form class="form formModification">
+            <div class="adminAcces" name="adminAcces">
             <input type="text" class="input" placeholder="Nom" name="name" required>
             <input type="text" class="input" placeholder="Prénom" name="lastname" required>
             <input type="text" class="input" placeholder="Pseudo" name="username" required>
+            </div>
             <div class="divPassModifier">
             <label for="#" class="text-Modifier">changer de mot de passe:</label>
             <input type="password" class="input" placeholder="Mot de passe" name="password" required></div>
