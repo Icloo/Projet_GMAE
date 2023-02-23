@@ -53,6 +53,8 @@
             
 
         </div>
+        <!-- footer -->
+        <?php require('template/footer.php'); ?>
 
         <!-- Script -->
         <?php include('template/script.php'); ?>
