@@ -13,11 +13,28 @@
   font-family: "Roboto", sans-serif;
 }
 /* Dashboard */
+.bodyAdmin{
+  background: #EFF8E2;
+  font-family: "Roboto", sans-serif;
+}
 .bodyModification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background: #f5f5f5;
+  
+}
+.adminInfo2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+.adminTitles{
+  color: black;
+  font-size: 1rem;
 }
 /* Formulaire login/inscription/ modifier */
 .secLogin,
@@ -45,17 +62,14 @@
 }
 .formInscription {
   padding: 2rem;
+
 }
 .formModification {
   padding: 2rem;
+  background: #FFFFFF;
+
 }
-.adminAcces {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+
 .GMAE-Logo {
   width: 250px;
 }
@@ -76,9 +90,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .text-Modifier {
-  margin-right: 10rem;
+  margin-right: auto;
   margin-bottom: 5px;
 }
 .submit {
@@ -101,7 +116,32 @@
 .submitInscription {
   margin-top: 3vh;
 }
+.submitAjouterCréer:hover{
+ background: #55A630;
+  ;
+}
 
+.submitModifierAdmin:hover{
+  background: #3A86FF;
+
+}
+
+.divPartenaireModifier,
+.divPartenaireUtilisateur{
+overflow-y: scroll;
+height: 5rem;
+width: 80%;
+border: 2px solid black;
+border-radius: 0.8rem;
+width: 20vw;
+padding: 1rem;
+}
+.textSup1{
+  margin-right:4rem;
+}
+.textSup2{
+  margin-right:6.5rem;
+}
 /* footer */
 .footer{
     margin-top: 10%;
@@ -114,6 +154,8 @@
   letter-spacing: 2px;
   font-family: "Libre Baskerville", serif;
 }
+
+
 
 /* responsive */
 @media screen and (max-width: 760px) {
@@ -129,7 +171,8 @@
   }
   .input {
     padding: 1rem;
-    width: 57vw;
+    width: 80%;
+    
   }
   .submit {
     margin-top: 2vh;
@@ -137,11 +180,37 @@
   .copyright {
     padding: 0.4rem;
   }
-  .formModification {
-    padding: 2rem;
+.divModifier{
+  width: 100%;
+}
+  .bodyModification {
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .formModification,.formInscription{
+    width: 85%;
+  }
+  .adminModif{
+    padding:1rem;
   }
   .text-Modifier {
-    margin-right: 0;
     margin-bottom: 5px;
+   margin-left:2rem;
   }
+  .adminInfo1 {
+    width: 100%;
+
+  }
+  .adminInfo2{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .divPartenaireModifier,
+  .divPartenaireUtilisateur{
+    width: 80%;
+  }
+  .textSup1,.textSup2{
+    margin-right:0;
+  }
+ 
 }
