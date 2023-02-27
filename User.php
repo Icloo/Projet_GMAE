@@ -10,24 +10,25 @@
     <title>Page inscription</title>
 </head>
 
-<body class="bodyModification">
-    <?php require('template/header.php'); ?>
+<body >
+<?php require('template/header.php'); ?>
 
     <section class="secModifier">
         <form class="form formModification">
-            <div class="adminAcces" name="adminAcces">
             <input type="text" class="input" placeholder="Nom" name="name" required>
             <input type="text" class="input" placeholder="Prénom" name="lastname" required>
             <input type="text" class="input" placeholder="Pseudo" name="username" required>
-            </div>
             <div class="divPassModifier">
             <label for="#" class="text-Modifier">changer de mot de passe:</label>
-            <input type="password" class="input" placeholder="Mot de passe" name="password" required></div>
+            <input type="password" class="input" placeholder="Mot de passe" name="password" required>
+        </div>
             <input type="text" class="input questionSecréte" placeholder=" Question secréte " name="QuesSecrete" value="">
             <input type="text" class="input reponseSecrete" placeholder="Réponse question secréte" name="ResSecrete" required>
             <input type="submit" class="submit submitModifier" name="submitModifier" value="Modifier">
         </form>
     </section>
+
+ 
     <?php
     
     require("template/footer.php");
